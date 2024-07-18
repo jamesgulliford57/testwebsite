@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math and Programming Textbook</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Math and Programming Textbook</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#chapter1">Chapter 1</a></li>
+                <li><a href="#chapter2">Chapter 2</a></li>
+                <!-- Add more chapters as needed -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Welcome to the Math and Programming Textbook. This resource is designed to help you understand key concepts in mathematics and programming.</p>
+        </section>
+        <section id="chapter1">
+            <h2>Chapter 1: Discrete Fourier Transform</h2>
+            <p>The Discrete Fourier Transform (DFT) converts a sequence of values into components of different frequencies.</p>
+            <h3>Mathematical Background</h3>
+            <p>Mathematically, the discrete Fourier transform is represented as:</p>
+            <div>
+                $$ X_k = \sum_{n=0}^{N-1} x_n \cdot e^{-i \cdot 2\pi \cdot k \cdot n / N} $$
+            </div>
+            <h3>Implementation</h3>
+            <pre><code class="language-python">
+import numpy as np
+x = np.array([0.0, 1.0, 0.0, 0.0])
+X = np.fft.fft(x)
+print(X)
+            </code></pre>
+        </section>
+        <section id="chapter2">
+            <h2>Chapter 2: Another Topic</h2>
+            <p>Content for another topic goes here.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+</body>
+</html>
